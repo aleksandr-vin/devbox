@@ -14,11 +14,16 @@ Ready for github/bitbucket: just put your ssh keys in home/.ssh/ (naming gh-id a
 
 ## Quick setup
 
-Clone and put ssh keys:
+Clone the repo:
 
 ```
 git clone https://github.com/aleksandr-vin/devbox.git
 cd devbox
+```
+
+No you can just call `./setup.sh`, or perform a full step job:
+
+```
 cp ~/.ssh/${YOUR_GITHUB_SSH_KEY} home/.ssh/gh-id
 cp ~/.ssh/${YOUR_BITBUCKET_SSH_KEY} home/.ssh/bb-id
 ```
