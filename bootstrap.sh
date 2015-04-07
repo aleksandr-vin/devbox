@@ -33,7 +33,7 @@ apt-get install -y htop
 
 echo Install home directory
 
-(cd /vagrant/home && find . -exec install --verbose --backup --mode=660 --group=vagrant --owner=vagrant --preserve-timestamps -D {} /home/vagrant/{} ";")
+(cd /vagrant/home && find . -exec install --verbose --backup --mode=600 --group=vagrant --owner=vagrant --preserve-timestamps -D {} /home/vagrant/{} ";")
 
 
 echo Installing busybox
