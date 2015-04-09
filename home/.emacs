@@ -54,3 +54,5 @@
                '("\\.py\\'" flymake-pylint-init)))
 
 (setq compilation-scroll-output t)
+(menu-bar-mode -1)
+(defalias 'yes-or-no-p 'y-or-n-p)
