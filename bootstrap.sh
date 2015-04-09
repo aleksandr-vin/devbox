@@ -25,6 +25,8 @@ echo Install Emacs
 
 apt-get install -y emacs24-nox
 
+su - vagrant emacs --daemon
+
 
 echo Install other packages
 
