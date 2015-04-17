@@ -14,11 +14,11 @@ usermod -a -G docker vagrant
 
 echo Install docker-compose
 
-curl -L https://github.com/docker/compose/releases/download/1.1.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+curl -L https://github.com/docker/compose/releases/download/latest/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod -v +x /usr/local/bin/docker-compose
 
 echo Install command completion for docker-compose
-curl -L https://raw.githubusercontent.com/docker/compose/1.1.0/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
+curl -L https://raw.githubusercontent.com/docker/compose/latest/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
 
 
 echo Install Emacs
@@ -30,18 +30,13 @@ su - vagrant -c "emacs --daemon"
 
 echo Install other packages
 
-apt-get install -y htop fortune cowsay lolcat
+apt-get install -y htop fortune cowsay lolcat figlet
 
 
 echo Install asciinema
 
 curl -sL https://asciinema.org/install | sh
 
-printf "
-  Run `asciinema rec` to start terminal recording
-
-  You can auth yourself with `asciinema auth`
-"
 
 echo Install home directory
 
@@ -52,14 +47,10 @@ echo Installing busybox
 
 docker run --rm busybox busybox
 
-printf "
+printf '
+Some tips:
 
-====================================================================
-
-  Some tips:
-
-  docker run --rm busybox busybox
-
-====================================================================
-
-"
+* `docker run --rm busybox busybox`
+* `asciinema rec` to start terminal recording
+* `asciinema auth` to auth your recordings
+' | /usr/games/cowsay
