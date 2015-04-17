@@ -30,7 +30,7 @@ su - vagrant -c "emacs --daemon"
 
 echo Install other packages
 
-apt-get install -y htop
+apt-get install -y htop fortune cowsay lolcat
 
 
 echo Install home directory
