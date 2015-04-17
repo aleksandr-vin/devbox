@@ -33,6 +33,16 @@ echo Install other packages
 apt-get install -y htop fortune cowsay lolcat
 
 
+echo Install asciinema
+
+curl -sL https://asciinema.org/install | sh
+
+printf "
+  Run `asciinema rec` to start terminal recording
+
+  You can auth yourself with `asciinema auth`
+"
+
 echo Install home directory
 
 (cd /vagrant/home && find . -exec install --verbose --backup --mode=600 --group=vagrant --owner=vagrant --preserve-timestamps -D {} /home/vagrant/{} ";")
