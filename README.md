@@ -7,10 +7,18 @@ Ready for github/bitbucket: just put your ssh keys in home/.ssh/ (naming gh-id a
 ## What's inside
 
 + Latest stable [Docker](https://docs.docker.com/)
-+ [Docker Compose](https://docs.docker.com/compose/) 1.1.0 with [command completions](https://docs.docker.com/compose/completion/)
++ [Docker Compose](https://docs.docker.com/compose/) 1.2.0 with [command completions](https://docs.docker.com/compose/completion/)
 + [Emacs](https://www.gnu.org/software/emacs/) 24 no X
 + [Busybox](https://registry.hub.docker.com/_/busybox/) docker image
 + [HTop](http://hisham.hm/htop/)
+
+### Plus some fun stuff
+
++ [Asciinema](https://asciinema.org)
++ [Fortune](http://en.wikipedia.org/wiki/Fortune_%28Unix%29),
+  [cowsay](http://en.wikipedia.org/wiki/Cowsay),
+  [lolcat](https://launchpad.net/ubuntu/+source/lolcat) &
+  [figlet](http://www.figlet.org/)
 
 ## Quick setup
 
