@@ -14,11 +14,11 @@ usermod -a -G docker vagrant
 
 echo Install docker-compose
 
-curl -L https://github.com/docker/compose/releases/download/latest/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod -v +x /usr/local/bin/docker-compose
 
 echo Install command completion for docker-compose
-curl -L https://raw.githubusercontent.com/docker/compose/latest/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
+curl -L https://raw.githubusercontent.com/docker/compose/1.2.0/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
 
 
 echo Install Emacs
